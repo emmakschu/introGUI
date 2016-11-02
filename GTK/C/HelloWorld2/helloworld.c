@@ -45,8 +45,10 @@ int main (int argc, char **argv)
 
     // Check the status of the app
     status = g_application_run (G_APPLICATION (app), argc, argv);
+
+    // Remove the GTK object from memory after window is closed.
     g_object_unref (app);
 
-    // Return status to terminate program when window is closed.
+    // Return status = 0 to terminate program when window is closed.
     return status;
 }
