@@ -1,5 +1,6 @@
 [Desktop Entry]
 Type=application
 Name=FirstApp
+Icon=firstapp
 StartupNotify=true
 Exec=/home/michael/introGUI/GTK/C/FirstApp/FirstApp
