@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<interface>
+    <object id="window" class="GtkWindow">
+        <property name="visible">True</property>
+        <property name="title">First Complete App</property>
+        <property name="default-width">800</property>
+        <property name="default-height">600></property>
+        <property name="border-width">10</property>
+
+        <child>
+            <object id="content_box" class="GtkBox">
+                <property name="visible">True</property>
+                <property name="orientation">vertical</property>
+            </object>
+        </child>
+    </object>
+</interface>
