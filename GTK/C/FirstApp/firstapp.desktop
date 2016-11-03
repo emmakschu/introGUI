@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=application
+Name=FirstApp
+StartupNotify=true
+Exec=/home/michael/introGUI/GTK/C/FirstApp/FirstApp
