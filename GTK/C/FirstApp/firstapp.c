@@ -42,3 +42,17 @@ static void first_app_open (GApplication *app,
 
     gtk_window_present (GTK_WINDOW (win));
 }
+
+static void first_app_class_init (FirstAppClass *class)
+{
+    G_APPLICATION_CLASS (class)->activate = first_app_activate;
+    G_APPLICATION_CLASS (class)->open = first_app_open;
+}
+
+FirstApp * first_app_new (void)
+{
+    return g_object_new (FIRST_APP_TYPE,
+                         "application-id", "com.github.mkschu.firstapp",
+                         "flags", G_APPLICATION_HANDLES_OPEN,
+                         NULL);
+}
