@@ -12,6 +12,20 @@
             <object id="content_box" class="GtkBox">
                 <property name="visible">True</property>
                 <property name="orientation">vertical</property>
+
+                <child>
+                    <object id="header" class="GtkHeaderBar">
+                        <property name="visible">True</property>
+
+                        <child type="title">
+                            <object id="tabs" class="GtkStackSwitcher">
+                                <property name="visible">True</property>
+                                <property name="stack">stack</property>
+                            </object>
+                        </child>
+                    </object>
+                </child>
+
             </object>
         </child>
     </object>
