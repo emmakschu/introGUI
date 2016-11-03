@@ -1,7 +1,21 @@
+<!--
+ * mkscu:introGUI/GTK/C/FirstUI/builder.ui
+ *
+ * This file contains the XML markup for the GTK objects called in the C file
+ * "myapp.c". Moving the UI properties to a separate file allows minor changes
+ * to be made without having to recompile the program, among other benefits.
+ *
+ * Author:   Michael K Schumacher (Github, Bitbucket: mkschu)
+ * Created:  02-Nov-2016
+ * Modified: 03-Nov-2016
+-->
+
 <interface>
     <object id="window" class="GtkWindow">
         <property name="visible">True</property>
         <property name="title">My First GUI</property>
+        <property name="default-width">800</property>
+        <property name="default-height">600</property>
         <property name="border-width">10</property>
 
         <child>
